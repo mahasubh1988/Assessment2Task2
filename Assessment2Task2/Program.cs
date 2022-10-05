@@ -211,7 +211,7 @@ namespace Assessment2Task2
 
             try
             {
-                // Open the file for writing
+                // Open the file for writing and delete any previous content
                 FileStream f = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Write);
                 f.SetLength(0);
 
